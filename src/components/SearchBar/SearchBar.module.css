@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 16px;
+  background-color: #ffffff16;
+}
+
+.input {
+  min-width: 280px;
+  padding: 8px;
+  border-radius: 5px;
+}

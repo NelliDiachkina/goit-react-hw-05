@@ -1,6 +1,6 @@
-.message {
+.error {
   font-size: 24px;
   font-weight: 500;
-  color: #e8e825;
+  color: #ca0000;
   padding: 20px;
 }

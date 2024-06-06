@@ -1,0 +1,29 @@
+.header {
+  border-bottom: 1px solid #9c9c9c;
+  box-shadow: 0 8px 10px -6px #cdcdcd4d;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 25px 20px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.isActive {
+  color: #ca0000;
+}

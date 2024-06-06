@@ -1,0 +1,22 @@
+.container {
+  padding: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  list-style: none;
+}
+
+.text,
+.textMessage {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+
+.textMessage {
+  text-align: center;
+}
