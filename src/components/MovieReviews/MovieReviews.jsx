@@ -35,9 +35,9 @@ export default function MovieReviews() {
 
   useEffect(() => {
     if (reviews.length > 0 && reviewsRef.current) {
-      reviewsRef.current.scrollIntoView({
+      window.scrollTo({
+        top: window.scrollY + 200,
         behavior: 'smooth',
-        block: 'center',
       });
     }
   }, [reviews]);

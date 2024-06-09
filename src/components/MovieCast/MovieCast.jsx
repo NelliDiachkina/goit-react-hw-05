@@ -36,9 +36,9 @@ export default function MovieCast() {
 
   useEffect(() => {
     if (cast.length > 0 && contentRef.current) {
-      contentRef.current.scrollIntoView({
+      window.scrollTo({
+        top: window.scrollY + 500,
         behavior: 'smooth',
-        block: 'center',
       });
     }
   }, [cast]);
