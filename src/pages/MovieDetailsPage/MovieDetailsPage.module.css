@@ -1,12 +1,25 @@
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 50px 20px;
+  padding: 20px;
+  background-color: #ffffff16;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   max-width: 400px;
 }
 
@@ -28,40 +41,41 @@
   width: 100%;
 }
 
-.navList a,
 .link {
-  color: #e8e825;
-  display: block;
-  padding: 10px 20px;
-  background-color: #ffffff16;
-  width: 150px;
-  text-align: center;
+  width: 160px;
   text-decoration: none;
   font-size: 20px;
-  border: 1px solid #e8e825;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navList a:hover,
-.link:hover {
-  color: #ca0000;
-  border-color: #ca0000;
-}
-
-.link {
+  font-weight: 600;
   display: flex;
-  gap: 10px;
   align-items: center;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 16px;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  color: var(--color);
+  transition: border 250ms ease-in-out, box-shadow 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.link:hover,
+.link.active {
+  box-shadow: var(--hover-box-shadow);
+  border: var(--hover-border);
+  color: var(--hover-color);
+}
+
+.wrapperText {
+  background-color: #ffffff16;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .text {
   font-size: 18px;
   font-weight: 500;
-  color: #ca0000;
-  padding: 15px 0px;
+  padding: 0px;
 }
 
 .wrapperImg {

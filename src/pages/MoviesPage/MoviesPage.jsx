@@ -42,7 +42,7 @@ export default function MoviesPage() {
   };
 
   return (
-    <div className={css.container}>
+    <main className={css.main}>
       <SearchBar onSearch={handleSearch} />
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
@@ -50,6 +50,6 @@ export default function MoviesPage() {
       {!error && !isLoading && searchMovies && foundMovies.length === 0 && (
         <p className={css.message}>No movies found for this query ... 🙁 </p>
       )}
-    </div>
+    </main>
   );
 }

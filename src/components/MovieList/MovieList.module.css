@@ -1,18 +1,44 @@
 .movieList {
-  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .link {
+  font-weight: 600;
+  text-align: center;
   color: currentColor;
   text-decoration: none;
-  display: block;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 500px;
+  width: 280px;
+  border-radius: 8px;
+  background-color: #ffffff1c;
+  box-shadow: var(--box-shadow);
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .link:hover {
-  background-color: #ffffff16;
+  transform: translateY(-6px);
+  box-shadow: var(--hover-card-box-shadow);
 }
 
-.link:visited {
-  color: #e8e825;
+.text {
+  padding: 12px;
+}
+
+.noImg {
+  font-size: 20px;
+  height: 420px;
+  background-color: #308bc788;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

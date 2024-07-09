@@ -1,29 +1,34 @@
 .header {
-  border-bottom: 1px solid #9c9c9c;
-  box-shadow: 0 8px 10px -6px #cdcdcd4d;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .navList {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .navLink {
   text-decoration: none;
-  font-size: 22px;
-  font-weight: 500;
-  color: currentColor;
+  font-size: 20px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 25px 20px;
+  padding: 8px 16px;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  color: var(--color);
+  transition: border 250ms ease-in-out, box-shadow 250ms ease-in-out,
+    color250ms ease-in-out;
 }
 
-.navLink:hover {
-  text-decoration: underline;
-}
-
+.navLink:hover,
 .isActive {
-  color: #ca0000;
+  box-shadow: var(--hover-box-shadow);
+  border: var(--hover-border);
+  color: var(--hover-color);
 }

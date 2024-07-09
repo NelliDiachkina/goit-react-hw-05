@@ -56,7 +56,7 @@ export default function MovieDetailsPage() {
   const score = Math.round(vote_average * 10);
 
   return (
-    <>
+    <main className={css.main}>
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
       <Link to={backLinkRef.current} className={css.link}>
@@ -76,21 +76,25 @@ export default function MovieDetailsPage() {
             />
           </div>
           <div className={css.content}>
-            <h2>
-              {original_title} ({year})
-            </h2>
-            <p className={css.text}>User Score: {score}%</p>
-            <h3>Overview</h3>
-            <p>{overview}</p>
+            <h2>{original_title}</h2>
+            <div className={css.wrapperText}>
+              <p className={css.text}>User Score: {score}%</p>
+              <p className={css.text}>Release Date: {year}</p>
+            </div>
+            <div className={css.wrapperText}>
+              <h3>Overview</h3>
+              <p>{overview}</p>
+            </div>
+
             {genres.length > 0 && (
-              <>
+              <div className={css.wrapperText}>
                 <h3>Genres</h3>
                 <ul className={css.list}>
                   {genres.map(({ id, name }) => (
                     <li key={id}>{name}</li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
           </div>
           <div className={css.wrapperImg}>
@@ -105,10 +109,14 @@ export default function MovieDetailsPage() {
           </div>
           <ul className={css.navList}>
             <li>
-              <NavLink to="cast">Cast</NavLink>
+              <NavLink to="cast" className={css.link}>
+                Cast
+              </NavLink>
             </li>
             <li>
-              <NavLink to="reviews">Reviews</NavLink>
+              <NavLink to="reviews" className={css.link}>
+                Reviews
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -117,6 +125,6 @@ export default function MovieDetailsPage() {
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
-    </>
+    </main>
   );
 }

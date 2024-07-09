@@ -44,7 +44,7 @@ export default function MovieCast() {
   }, [cast]);
 
   return (
-    <>
+    <div className={css.container}>
       <h2>MovieCast</h2>
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
@@ -71,6 +71,6 @@ export default function MovieCast() {
           Sorry! We have no information about the cast of this film 🙁
         </p>
       )}
-    </>
+    </div>
   );
 }

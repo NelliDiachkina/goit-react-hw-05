@@ -31,9 +31,9 @@ export default function SearchBar({ onSearch }) {
         className={css.input}
       />
       <button type="submit" className={css.btn}>
-        <FaSearch size="23" />
+        <FaSearch size="30" />
       </button>
-      <Toaster toastOptions={toastOptions} position="top-left" />
+      <Toaster toastOptions={toastOptions} position="top-center" />
     </form>
   );
 }

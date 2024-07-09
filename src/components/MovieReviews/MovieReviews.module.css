@@ -1,12 +1,11 @@
 .container {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .list {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
   list-style: none;
 }
 

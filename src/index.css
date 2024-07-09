@@ -1,10 +1,42 @@
+@font-face {
+  font-family: InterVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('./fonts/InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: InterVariable;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('./fonts/InterVariable-Italic.woff2') format('woff2');
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color: #51a7e0eb;
+  --hover-color: #ffffffc4;
+  --border: 1px solid #308bc7;
+  --box-shadow: 0 0 10px #2e2f4294, inset 0 0 20px #308bc7b9;
+  --hover-box-shadow: 0 0 10px #2e2f4294, inset 0 0 25px #ffffffa3;
+  --hover-card-box-shadow: 0 0 20px #2e2f42d7, inset 0 0 30px #ffffffee;
+  --hover-border: 1px solid #ffffff;
+}
+
+body {
+  font-family: InterVariable, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: #ffffffde;
+  color: #ffffff;
   background-color: #242424;
+  background-image: linear-gradient(to bottom, #1e1f2b99, #2e2f42b3),
+    url('./images/background-webp.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,21 +47,29 @@
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+h3 {
+  margin: 0px;
 }
 
 h1 {
   padding: 20px 0px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 800;
   padding: 30px 10px;
   text-align: center;
-  background-color: #ffffff16;
-  color: #ca0000;
-  margin: 0;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, #308bc7a8, #2e2f428a);
 }
 
 p {
@@ -51,12 +91,11 @@ input {
 }
 
 input::placeholder {
-  color: #e8e82538;
+  color: #ffffffa3;
 }
 
 button {
   cursor: pointer;
-  color: #e8e825;
   border: none;
   background-color: transparent;
   outline: none;
@@ -64,9 +103,4 @@ button {
   font-weight: 500;
   font-family: inherit;
   line-height: inherit;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-button:hover {
-  color: #ca0000;
 }

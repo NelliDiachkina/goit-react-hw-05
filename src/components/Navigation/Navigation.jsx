@@ -15,12 +15,12 @@ export default function Navigation() {
         <ul className={css.navList}>
           <li>
             <NavLink to="/" className={makeLinkClass}>
-              <HiHome size="24px" /> Home
+              <HiHome size="30px" />
             </NavLink>
           </li>
           <li>
             <NavLink to="/movies" className={makeLinkClass}>
-              <MdLocalMovies size="24px" /> Movies
+              <MdLocalMovies size="30px" /> Movies
             </NavLink>
           </li>
         </ul>

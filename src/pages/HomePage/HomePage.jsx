@@ -5,7 +5,6 @@ import { getTrendingMovies } from '../../api/api';
 import MovieList from '../../components/MovieList/MovieList';
 import Loader from '../../components/Loader/Loader';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-
 import css from './HomePage.module.css';
 
 export default function HomePage() {
@@ -30,11 +29,11 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className={css.container}>
-      <h1>Trending today</h1>
+    <main className={css.main}>
+      <h1>Trending Movies</h1>
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
       {!error && movies.length > 0 && <MovieList movies={movies} />}
-    </div>
+    </main>
   );
 }
