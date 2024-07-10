@@ -6,14 +6,6 @@
   src: url('./fonts/InterVariable.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: InterVariable;
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url('./fonts/InterVariable-Italic.woff2') format('woff2');
-}
-
 :root {
   --color: #51a7e0eb;
   --hover-color: #ffffffc4;
@@ -32,7 +24,7 @@ body {
   color: #ffffff;
   background-color: #242424;
   background-image: linear-gradient(to bottom, #1e1f2b99, #2e2f42b3),
-    url('./images/background-webp.webp');
+    url('./images/background.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
