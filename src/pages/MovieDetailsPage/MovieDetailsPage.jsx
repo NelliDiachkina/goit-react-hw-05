@@ -8,11 +8,10 @@ import {
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { FaArrowLeftLong } from 'react-icons/fa6';
 import { getMovieDetail } from '../../api/api';
-import { defaultImg } from '../../api/helpers';
 
 import Loader from '../../components/Loader/Loader';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-
+import { MdOutlineImageNotSupported } from 'react-icons/md';
 import css from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
@@ -66,17 +65,22 @@ export default function MovieDetailsPage() {
       {!error && movieDetail && (
         <div className={css.container}>
           <div className={css.wrapperImg}>
-            <img
-              src={
-                poster_path
-                  ? `https://image.tmdb.org/t/p/w300${poster_path}`
-                  : defaultImg
-              }
-              alt={original_title}
-            />
+            {poster_path ? (
+              <img
+                src={`https://image.tmdb.org/t/p/w300${poster_path}`}
+                alt={original_title}
+                width={300}
+              />
+            ) : (
+              <p className={css.noImg}>
+                <MdOutlineImageNotSupported size="30px" />
+                No Image
+              </p>
+            )}
           </div>
+
           <div className={css.content}>
-            <h2>{original_title}</h2>
+            <h2 className={css.title}>{original_title}</h2>
             <div className={css.wrapperText}>
               <p className={css.text}>User Score: {score}%</p>
               <p className={css.text}>Release Date: {year}</p>
@@ -98,14 +102,18 @@ export default function MovieDetailsPage() {
             )}
           </div>
           <div className={css.wrapperImg}>
-            <img
-              src={
-                backdrop_path
-                  ? `https://image.tmdb.org/t/p/w300${backdrop_path}`
-                  : defaultImg
-              }
-              alt={original_title}
-            />
+            {backdrop_path ? (
+              <img
+                src={`https://image.tmdb.org/t/p/w300${backdrop_path}`}
+                alt={original_title}
+                width={300}
+              />
+            ) : (
+              <p className={css.noImg}>
+                <MdOutlineImageNotSupported size="30px" />
+                No Image
+              </p>
+            )}
           </div>
           <ul className={css.navList}>
             <li>

@@ -1,0 +1,21 @@
+.btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 8px;
+  border-radius: 50%;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  color: var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 250ms ease-in-out, box-shadow 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: var(--hover-box-shadow);
+  border: var(--hover-border);
+  color: var(--hover-color);
+}

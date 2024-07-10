@@ -7,7 +7,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import MovieList from '../../components/MovieList/MovieList';
 import Loader from '../../components/Loader/Loader';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
-
+import TypewriterEffect from '../../components/TypewriterEffect/TypewriterEffect';
 import css from './MoviesPage.module.css';
 
 export default function MoviesPage() {
@@ -17,6 +17,8 @@ export default function MoviesPage() {
 
   const [searchParams, setSearchParams] = useSearchParams();
   const searchMovies = searchParams.get('query') ?? '';
+  const text =
+    'Start searching for your favorite movie now and find your next great watch ... ';
 
   useEffect(() => {
     if (!searchMovies) return;
@@ -44,6 +46,9 @@ export default function MoviesPage() {
   return (
     <main className={css.main}>
       <SearchBar onSearch={handleSearch} />
+      <div className={css.wrapper}>
+        <TypewriterEffect text={text} />
+      </div>
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
       {!error && foundMovies.length > 0 && <MovieList movies={foundMovies} />}

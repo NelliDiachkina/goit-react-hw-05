@@ -24,7 +24,7 @@
 }
 
 .link:hover {
-  transform: translateY(-6px);
+  transform: translateY(-7px);
   box-shadow: var(--hover-card-box-shadow);
 }
 
@@ -34,11 +34,27 @@
 
 .noImg {
   font-size: 20px;
-  height: 420px;
   background-color: #308bc788;
   height: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.listItem {
+  position: relative;
+}
+
+.vote {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #232323bb;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #e27c08;
 }

@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
 import Navigation from '../Navigation/Navigation';
+import BtnScrollToTop from '../BtnScrollToTop/BtnScrollToTop';
 import Loader from '../Loader/Loader';
 
 const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
@@ -31,6 +32,8 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
+
+      <BtnScrollToTop />
     </>
   );
 }

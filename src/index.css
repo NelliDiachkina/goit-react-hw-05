@@ -7,12 +7,12 @@
 }
 
 :root {
-  --color: #51a7e0eb;
+  --color: #51a7e0;
   --hover-color: #ffffffc4;
   --border: 1px solid #308bc7;
-  --box-shadow: 0 0 10px #2e2f4294, inset 0 0 20px #308bc7b9;
+  --box-shadow: 0 0 10px #2e2f42a0, inset 0 0 20px #308bc7d1;
   --hover-box-shadow: 0 0 10px #2e2f4294, inset 0 0 25px #ffffffa3;
-  --hover-card-box-shadow: 0 0 20px #2e2f42d7, inset 0 0 30px #ffffffee;
+  --hover-card-box-shadow: 0 0 20px #2e2f42d7, inset 0 0 40px #ffffffee;
   --hover-border: 1px solid #ffffff;
 }
 
@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #242424;
-  background-image: linear-gradient(to bottom, #1e1f2b99, #2e2f42b3),
+  background-image: linear-gradient(to bottom, #1e1f2b99, #2e2f42e3),
     url('./images/background.webp');
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,18 +48,16 @@ h3 {
 
 h1 {
   padding: 20px 0px;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 800;
   margin: 0;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
   margin-top: 0px;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 800;
-  padding: 30px 10px;
-  text-align: center;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, #308bc7a8, #2e2f428a);
 }

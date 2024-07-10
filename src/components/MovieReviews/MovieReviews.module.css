@@ -19,3 +19,13 @@
 .textMessage {
   text-align: center;
 }
+
+.rewiew {
+  border-radius: 8px;
+  background-color: #ffffff1c;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+.title {
+  text-align: center;
+}

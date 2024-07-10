@@ -13,7 +13,7 @@ export default function MovieReviews() {
   const [reviews, setReviews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
-  const reviewsRef = useRef();
+  const reviewsRef = useRef(null);
 
   useEffect(() => {
     if (!movieId) return;
@@ -35,22 +35,24 @@ export default function MovieReviews() {
 
   useEffect(() => {
     if (reviews.length > 0 && reviewsRef.current) {
-      window.scrollTo({
-        top: window.scrollY + 200,
-        behavior: 'smooth',
-      });
+      const { height } = reviewsRef.current.getBoundingClientRect();
+      window.scrollBy({ top: height, behavior: 'smooth' });
     }
   }, [reviews]);
 
   return (
     <div className={css.container}>
-      <h2>MovieReviews</h2>
+      <h2 className={css.title}>Movie Reviews</h2>
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
       {!error && reviews.length > 0 ? (
-        <ul className={css.list} ref={reviewsRef}>
-          {reviews.map(({ id, author, content }) => (
-            <li key={id}>
+        <ul className={css.list}>
+          {reviews.map(({ id, author, content }, index) => (
+            <li
+              key={id}
+              className={css.rewiew}
+              ref={index === 0 ? reviewsRef : null}
+            >
               <p className={css.text}>{author}</p>
               <p>{content}</p>
             </li>

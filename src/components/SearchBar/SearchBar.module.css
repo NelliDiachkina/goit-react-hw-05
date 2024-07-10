@@ -4,8 +4,8 @@
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-bottom: 40px;
+  gap: 15px;
+  padding-bottom: 20px;
 }
 
 .input {
@@ -25,19 +25,38 @@
   border-radius: 8px;
   border: var(--border);
   box-shadow: var(--box-shadow);
-  color: var(--color);
-  transition: border 250ms ease-in-out, box-shadow 250ms ease-in-out,
-    color 250ms ease-in-out;
+  background-color: #ffffff16;
+  transition: border 250ms ease-in-out, color 250ms ease-in-out,
+    box-shadow 250ms ease-in-out;
+  animation: pulse 1.5s infinite;
 }
 
 .btn:hover {
-  box-shadow: var(--hover-box-shadow);
   border: var(--hover-border);
   color: var(--hover-color);
+  box-shadow: var(--hover-box-shadow);
+  animation: none;
 }
 
 @media screen and (min-width: 620px) {
   .form {
     justify-content: center;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: var(--color);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    color: var(--color);
   }
 }

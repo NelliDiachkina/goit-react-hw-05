@@ -4,6 +4,16 @@
   padding: 20px;
 }
 
+.wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  background-color: #ffffff16;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
 .message {
   font-size: 24px;
   font-weight: 500;
