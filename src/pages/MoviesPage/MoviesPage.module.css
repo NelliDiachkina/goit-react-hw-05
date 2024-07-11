@@ -17,6 +17,6 @@
 .message {
   font-size: 24px;
   font-weight: 500;
-  color: #e8e825;
+  color: var(--color-decor);
   padding: 20px;
 }
