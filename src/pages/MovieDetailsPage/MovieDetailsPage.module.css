@@ -63,8 +63,8 @@
 .link:hover,
 .link.active {
   box-shadow: var(--hover-box-shadow);
-  border: var(--hover-border);
-  color: var(--hover-color);
+  border: var(--hover-border-decor);
+  color: var(--color-decor);
 }
 
 .wrapperText {
@@ -93,6 +93,7 @@
   gap: 10px;
   width: 280px;
 }
+
 .title {
   padding: 20px;
   text-align: center;

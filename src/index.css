@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #242424;
-  background-image: linear-gradient(to bottom, #1e1f2b, #312868);
+  background-image: linear-gradient(to bottom, #1e1f2b, #1c163d);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@ input {
 }
 
 input::placeholder {
-  color: #ffffff9a;
+  color: var(--color-decor);
 }
 
 button {
