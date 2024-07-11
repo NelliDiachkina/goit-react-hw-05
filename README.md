@@ -1,19 +1,12 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
-
 # Кінопошук
 
-Напиши застосунок із маршрутизацією для пошуку фільмів за назвою. Подивіться
-демо-відео роботи застосунку.
+![1](https://github.com/NelliDiachkina/goit-react-hw-05/assets/99911692/edd40fd3-df9a-43a3-89b0-9b2c9d208db2)
+![2](https://github.com/NelliDiachkina/goit-react-hw-05/assets/99911692/b35e2bba-c85f-4c90-9d64-99c1319ae34f)
+![3](https://github.com/NelliDiachkina/goit-react-hw-05/assets/99911692/715599a8-8c19-4408-b9a7-22c71ce9c342)
+![4](https://github.com/NelliDiachkina/goit-react-hw-05/assets/99911692/ac8c38bf-81c4-447e-85f0-7bfb819ce9b2)
+
+**Напиши застосунок із маршрутизацією для пошуку фільмів за назвою. Подивіться
+демо-відео роботи застосунку.**
 
 
 https://github.com/NelliDiachkina/goit-react-hw-05/assets/99911692/22f9d8d9-38c0-4ffd-b30b-77fb9228e2d9
