@@ -38,7 +38,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background-image: linear-gradient(to bottom, #1e1f2bcf, #2e2f42e3),
+    background-image: linear-gradient(to bottom, #1e1f2bd5, #2e2f42e3),
       url('./images/background-desktop.webp');
   }
 }
