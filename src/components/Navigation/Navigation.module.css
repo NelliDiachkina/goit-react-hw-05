@@ -29,6 +29,6 @@
 .navLink:hover,
 .isActive {
   box-shadow: var(--hover-box-shadow);
-  border: var(--hover-border);
-  color: var(--hover-color);
+  border: var(--hover-border-decor);
+  color: var(--color-decor);
 }

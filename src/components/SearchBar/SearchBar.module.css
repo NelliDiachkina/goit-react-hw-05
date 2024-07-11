@@ -32,8 +32,8 @@
 }
 
 .btn:hover {
-  border: var(--hover-border);
-  color: var(--hover-color);
+  border: var(--hover-border-decor);
+  color: var(--color-decor);
   box-shadow: var(--hover-box-shadow);
   animation: none;
 }
@@ -52,7 +52,7 @@
   }
   50% {
     transform: scale(1.1);
-    color: #ffffff;
+    color: var(--color-decor);
     opacity: 0.7;
   }
   100% {

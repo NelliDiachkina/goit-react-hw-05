@@ -7,7 +7,7 @@ const notify = () => toast('Please enter a search query!');
 const toastOptions = {
   duration: 2500,
   style: {
-    background: '#e8e825',
+    background: '#eb8108',
     color: 'black',
   },
 };

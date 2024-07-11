@@ -26,7 +26,7 @@ export default function TypewriterEffect({ text, speed = 100 }) {
 
   return (
     <div className={css.container}>
-      <p>{displayedText}</p>
+      <p className={css.text}>{displayedText}</p>
     </div>
   );
 }
