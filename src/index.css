@@ -10,9 +10,9 @@
   --color: #51a7e0;
   --hover-color: #ffffffc4;
   --border: 1px solid #308bc7;
-  --box-shadow: 0 0 10px #2e2f42a0, inset 0 0 20px #308bc7d1;
-  --hover-box-shadow: 0 0 10px #2e2f4294, inset 0 0 25px #ffffffa3;
-  --hover-card-box-shadow: 0 0 20px #2e2f42d7, inset 0 0 40px #ffffffee;
+  --box-shadow: 0 0 10px #232425, inset 0 0 20px #308bc7d1;
+  --hover-box-shadow: 0 0 10px #232425, inset 0 0 25px #ffffffa3;
+  --hover-card-box-shadow: 0 0 20px #232425, inset 0 0 40px #ffffffee;
   --hover-border: 1px solid #ffffff;
 }
 
@@ -23,13 +23,11 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #242424;
-  background-image: linear-gradient(to bottom, #1e1f2b99, #2e2f42e3),
-    url('./images/background-mobile.webp');
+  background-image: linear-gradient(to bottom, #15001f, #3a2f7b);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
